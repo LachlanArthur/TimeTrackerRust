@@ -1,0 +1,10 @@
+[package]
+name = "time_tracker"
+version = "0.1.0"
+authors = ["Lachlan Arthur <lachlanarthur@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser", "sysinfoapi", "psapi", "processthreadsapi", "handleapi"] }
